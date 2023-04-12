@@ -19,9 +19,9 @@ function Footer() {
                 
                     <h4 className="w-full m-2">Desenvolvido por</h4>
                 
-                
-                    <div className="w-full m-2"><h5 > Fernanda </h5>  <a href="#">linkeding </a>/<a href="#"> Git Hub</a></div><div className="w-full m-2"><h5>Flavio</h5> <a href="#">linkeding </a>/<a href="#"> Git Hub</a></div>
-                
+                    <div className="lg:flex flex-row">
+                    <div className="w-full m-2  "><h5 > Fernanda </h5>  <a href="#">linkeding </a>/<a href="#"> Git Hub</a></div><div className="w-full m-2"><h5>Flavio</h5> <a href="#">linkeding </a>/<a href="#"> Git Hub</a></div>
+                    </div>
                 
                    <h5 className="w-full m-2"> contato</h5>
                    <a href="#" className="w-full m-2">Email</a>
