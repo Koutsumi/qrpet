@@ -8,14 +8,14 @@
     }
 
   .inp-primary{
-    @apply bg-principal py-2 px-3 text-white rounded-[5px] placeholder:text-white
+    @apply bg-principal block py-2 px-3 text-white rounded-[5px] placeholder:text-white
   }
 
-  .mySection{
+  .direction-col{
     @apply flex flex-col items-center justify-center
   }
 
-  .row{
+  .direction-row{
     @apply w-[90%] flex flex-row items-center justify-between
   }
 }
