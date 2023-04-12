@@ -12,6 +12,10 @@ module.exports = {
       "terciaria": "#dc4759",
       "white": "#ffff",
       "black": "#000"
+    },
+    backgroundImage: {
+      "login": "url('./src/assets/images/gatoLogin.jpg')",
+      "none": "url('')"
     }
   },
   plugins: [],
