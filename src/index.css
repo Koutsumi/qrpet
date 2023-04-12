@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+      @apply bg-terciaria py-2 px-3 text-white rounded-[5px] 
+    }
+
+  .inp-primary{
+    @apply bg-principal py-2 px-3 text-white rounded-[5px] placeholder:text-white
+  }
+
+  .mySection{
+    @apply flex flex-col items-center justify-center
+  }
+
+  .row{
+    @apply w-[90%] flex flex-row items-center justify-between
+  }
+}
