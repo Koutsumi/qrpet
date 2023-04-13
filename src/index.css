@@ -4,11 +4,15 @@
 
 @layer components {
   .btn-primary {
-      @apply bg-terciaria py-2 px-3 text-white rounded-[5px] 
+      @apply bg-terciaria py-2 px-3 mb-4 text-white rounded-[5px] 
     }
 
+  .btn-disabled {
+      @apply bg-secundaria py-2 px-3 mb-4 text-white rounded-[5px] 
+  }
+
   .inp-primary{
-    @apply bg-principal block py-2 px-3 text-white rounded-[5px] placeholder:text-white
+    @apply bg-principal block py-2 px-3 mb-4 text-white rounded-[5px] placeholder:text-white
   }
 
   .direction-col{

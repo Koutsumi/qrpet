@@ -46,11 +46,11 @@ function Login() {
                 <div>
                     <form action="">
                         <label htmlFor="">E-mail</label>
-                        <input id="email-address" required className="inp-primary mb-4" type="email" name="" placeholder="exemplo@qrpet.com" onChange={(e)=>setEmail(e.target.value)}/>
+                        <input id="email-address" required className="inp-primary" type="email" name="" placeholder="exemplo@qrpet.com" onChange={(e)=>setEmail(e.target.value)}/>
                         <label htmlFor="">Senha</label>
                         <input id="password" required className="inp-primary" type="password" name="" placeholder="Senha" onChange={(e)=>setPassword(e.target.value)}/>
                         <div className="w-full direction-col my-4">
-                        <button onClick={onLogin} type="submit" className="btn-primary">Entrar</button>
+                        <button  onClick={onLogin} type="submit" className="btn-primary">Entrar</button>
                         </div>
                     </form>
                 </div>
