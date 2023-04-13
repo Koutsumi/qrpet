@@ -15,7 +15,8 @@ module.exports = {
     },
     backgroundImage: {
       "login": "url('./src/assets/images/gatoLogin.jpg')",
-      "none": "url('')"
+      "none": "url('')",
+      "Dog": "url('./src/assets/images/dogperdido.png')"
     }
   },
   plugins: [],
