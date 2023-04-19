@@ -62,8 +62,8 @@ function Register() {
     }, [password, confirmPass, terms])
 
     return(
-        <main className="w-full direction-col">
-            <img src={indianPig} alt="" className='lg:none'/>
+        <main className="w-full direction-col mt-3">
+            <img src={indianPig} alt="" className='lg:hidden'/>
             
             
             <section className="w-[90%] direction-col">
@@ -92,7 +92,7 @@ function Register() {
                             <span className='block text-[0.7em]'>* A Qr Pet não se responsabiliza pelo seu pet</span>
                         </div>
 
-                        <div className='w-[full] direction-col'>
+                        <div className='w-[full] direction-col mb-4'>
                             <button disabled={buttonStatus ? true : false} className={buttonStatus ? "btn-disabled text-black " : "btn-primary cursor-pointer"} onClick={onSubmit} >Cadastrar-se</button>
                         </div>
                     </form>
