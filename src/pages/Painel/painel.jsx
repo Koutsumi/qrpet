@@ -20,7 +20,7 @@ function Painel() {
           console.log('Não logado')
           navigate("/login")
         }
-      });
+    });
 
  
     const handleLogout = () => {               
