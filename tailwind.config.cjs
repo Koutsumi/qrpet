@@ -11,7 +11,8 @@ module.exports = {
       "secundaria": "#fcd0d0",
       "terciaria": "#dc4759",
       "white": "#ffff",
-      "black": "#000"
+      "black": "#000",
+      "red": "#F70021"
     },
     backgroundImage: {
       "login": "url('./src/assets/images/gatoLogin.jpg')",

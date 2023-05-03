@@ -24,6 +24,7 @@ function Painel() {
   const [modal2, setModal2] = useState(false);
   
 
+<<<<<<< HEAD
   const handleLogout = () => {
     signOut(auth).then(() => {
       // Sign-out successful.
@@ -36,6 +37,20 @@ function Painel() {
   async function cadastrarnovopet(){
    await navigate("/createpet");
   }
+=======
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+          // User is signed in, see docs for a list of available properties
+          // https://firebase.google.com/docs/reference/js/firebase.User
+          const uid = user.uid;
+          console.log(uid)
+          // ...
+        } else {
+          console.log('Não logado')
+          navigate("/login")
+        }
+    });
+>>>>>>> 43a0b3b55e468bb990b62b35bb44902a9acd0f5b
 
   
 
