@@ -13,6 +13,8 @@ function Login() {
           const uid = user.uid;
           console.log(uid)
           navigate("/painel")
+
+        
           // ...
         } else {
           console.log('Não logado')
@@ -41,7 +43,7 @@ function Login() {
     }
 
     return(
-        <main className="w-full direction-col lg:bg-secundaria bg-login bg-no-repeat h-[60vh] bg-cover lg:bg-none lg:min-h-[90vh]">
+        <main className=" w-full direction-col lg:bg-secundaria bg-login bg-no-repeat h-[60vh] bg-cover lg:bg-none lg:min-h-[90vh]">
             <section className="w-[90%] direction-col">
                 <div>
                     <form action="">

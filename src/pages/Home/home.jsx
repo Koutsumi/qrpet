@@ -6,6 +6,8 @@ import img2 from '../../assets/images/teste.png'
 
 
 function Home() {
+
+    
     function share(){
         if (navigator.share !== undefined) {
             navigator.share({
