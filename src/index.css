@@ -18,4 +18,6 @@
   .direction-row{
     @apply w-[90%] flex flex-row items-center justify-between
   }
+
+ 
 }
