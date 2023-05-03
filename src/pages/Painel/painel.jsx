@@ -24,7 +24,7 @@ function Painel() {
   const [modal2, setModal2] = useState(false);
   
 
-<<<<<<< HEAD
+
   const handleLogout = () => {
     signOut(auth).then(() => {
       // Sign-out successful.
@@ -37,7 +37,7 @@ function Painel() {
   async function cadastrarnovopet(){
    await navigate("/createpet");
   }
-=======
+
     onAuthStateChanged(auth, (user) => {
         if (user) {
           // User is signed in, see docs for a list of available properties
@@ -50,7 +50,7 @@ function Painel() {
           navigate("/login")
         }
     });
->>>>>>> 43a0b3b55e468bb990b62b35bb44902a9acd0f5b
+
 
   
 
