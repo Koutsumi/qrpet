@@ -63,17 +63,14 @@ function CreatePet() {
         
     }
     
-    const [petName, setPetName] = useState()
-    const [petBirth, setPetBirth] = useState()
-    const [owner_first, setOwner_first] = useState()
-    const [owner_second, setOwner_second] = useState()
-    const [owner_phone, setOwner_phone] = useState()
-    const [owner_phone_second, setOwner_phone_second] = useState()
-    const [owner_address, setOwner_address] = useState()
-    const [owner_district, setOwner_district] = useState()
-    const [owner_city, setOwner_city] = useState()
-    const [owner_uf, setOwner_uf] = useState()
-    const [details, setDetails] = useState()
+    const [petName, setPetName] = useState(null)
+    const [petBirth, setPetBirth] = useState(null)
+    const [owner_first, setOwner_first] = useState(null)
+    const [owner_second, setOwner_second] = useState(null)
+    const [owner_phone, setOwner_phone] = useState(null)
+    const [owner_phone_second, setOwner_phone_second] = useState(null)
+    const [owner_address, setOwner_address] = useState(null)
+    const [details, setDetails] = useState(null)
 
     async function newPet(event){
         event.preventDefault()
@@ -89,9 +86,6 @@ function CreatePet() {
             owner_phone,
             owner_phone_second,
             owner_address,
-            owner_district,
-            owner_city,
-            owner_uf,
             details,
             createdAt : serverTimestamp(),
             updatedAt:  serverTimestamp()
@@ -104,9 +98,6 @@ function CreatePet() {
         setOwner_phone("")
         setOwner_phone_second("")
         setOwner_address("")
-        setOwner_district("")
-        setOwner_city("")
-        setOwner_uf("")
         setDetails("")
     }
 
@@ -167,15 +158,6 @@ function CreatePet() {
 
                         <label className="block" htmlFor="">Endereço</label>
                         <input onChange={event => setOwner_address(event.target.value)} value={owner_address || ''} className="inp-primary w-full" type="text" />
-
-                        <label className="block" htmlFor="">Bairro</label>
-                        <input onChange={event => setOwner_district(event.target.value)} value={owner_district || ''} className="inp-primary w-full" type="text" name="" id="" />
-
-                        <label className="block" htmlFor="">Cidade</label>
-                        <input onChange={event => setOwner_city(event.target.value)} value={owner_city || ''} className="inp-primary w-full" type="text" name="" id="" />
-
-                        <label className="block" htmlFor="">UF</label>
-                        <input onChange={event => setOwner_uf(event.target.value)} value={owner_uf || ''} className="inp-primary w-full" type="text" name="" id="" />
 
                         <label className="block" htmlFor="">Telefone para contato</label>
                         <input onChange={event => setOwner_phone(event.target.value)} value={owner_phone || ''} className="inp-primary w-full"  type="text" name="" id="" />
