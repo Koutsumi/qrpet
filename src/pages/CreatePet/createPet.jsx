@@ -29,8 +29,8 @@ function CreatePet() {
     }, [])
 
     const [file, setFile] = useState("")
-    const [petGender, SetPetGender] = useState()
-    const [petImage, setPetImage] = useState()
+    const [petGender, SetPetGender] = useState(null)
+    const [petImage, setPetImage] = useState("https://firebasestorage.googleapis.com/v0/b/qrpet-3a69c.appspot.com/o/files%2FNAODELETAR.jpg?alt=media&token=1c4cb848-0723-4d9a-aa71-1f846f829c13")
     const [percent, setPercent] = useState(0);
 
     function handleChange(event) {
@@ -132,9 +132,9 @@ function CreatePet() {
                     <form onSubmit={newPet} action="" className="w-[90%] lg:max-w-[450px]">
 
                         <label htmlFor="">Foto do pet</label>
-                        <div className="w-[100%] h-[200px] overflow-hidden bg-secundaria rounded direction-col mb-4 mt-2">
+                        <div className="w-[100%] h-[250px] overflow-hidden bg-secundaria rounded direction-col mb-4 mt-2">
                             <p>Preview</p> <span>{percent}% </span>
-                            <img src={petImage != undefined ? `${petImage}` : ""} alt="" />
+                            <img src={petImage != undefined ? `${petImage}` : ""} alt="" className="w-[100%] "/>
                         </div>
                         <input className=" w-full inp-primary" accept="image/*" type="file" onChange={handleChange} />
                         <p>Selecione o sexo do seu pet:</p>
@@ -185,7 +185,7 @@ function CreatePet() {
             <section className={isExpanded === true ? "w-full direction-col my-10 fixed top-[10rem]" : "hidden"}>
                 <div className="w-[80%] bg-secundaria rounded shadow-2xl py-4">
                     <div className="w-full direction-col">
-                        <h1 className="text-center my-4 uppercase text-terciaria font-bold tracking-[5px] text-[1.1em]">{petName} cadastrado com sucesso!</h1>
+                        <h1 className="text-center my-4 uppercase text-terciaria font-bold tracking-[5px] text-[1.1em]">Pet cadastrado com sucesso!</h1>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                             width="75.000000pt" height="75.000000pt" viewBox="0 0 512.000000 512.000000"
                             preserveAspectRatio="xMidYMid meet">
@@ -195,19 +195,19 @@ function CreatePet() {
                             <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
                                 fill="#20BF55" stroke="none">
                                 <path d="M2353 4850 c-540 -53 -1043 -288 -1418 -665 -354 -356 -574 -796
--652 -1305 -24 -160 -24 -481 1 -645 234 -1553 1890 -2426 3291 -1735 683 337
-1149 980 1261 1740 10 68 17 184 18 282 1 154 -1 168 -20 195 -53 72 -148 95
--224 54 -57 -30 -80 -81 -80 -181 -1 -684 -332 -1301 -895 -1673 -234 -154
--506 -257 -796 -303 -140 -22 -409 -22 -554 0 -440 67 -827 265 -1130 577
--224 231 -362 457 -461 754 -217 655 -81 1354 369 1891 415 496 1093 761 1734
-679 209 -27 375 -75 575 -166 122 -55 163 -60 222 -26 52 30 77 65 83 120 12
-100 -30 150 -182 216 -197 87 -403 147 -605 176 -130 19 -414 27 -537 15z"/>
+                                -652 -1305 -24 -160 -24 -481 1 -645 234 -1553 1890 -2426 3291 -1735 683 337
+                                1149 980 1261 1740 10 68 17 184 18 282 1 154 -1 168 -20 195 -53 72 -148 95
+                                -224 54 -57 -30 -80 -81 -80 -181 -1 -684 -332 -1301 -895 -1673 -234 -154
+                                -506 -257 -796 -303 -140 -22 -409 -22 -554 0 -440 67 -827 265 -1130 577
+                                -224 231 -362 457 -461 754 -217 655 -81 1354 369 1891 415 496 1093 761 1734
+                                679 209 -27 375 -75 575 -166 122 -55 163 -60 222 -26 52 30 77 65 83 120 12
+                                100 -30 150 -182 216 -197 87 -403 147 -605 176 -130 19 -414 27 -537 15z"/>
                                 <path d="M4625 4274 c-16 -9 -91 -76 -165 -148 -263 -256 -1339 -1314 -1635
--1607 l-300 -297 -460 454 c-296 293 -474 462 -500 474 -53 26 -91 25 -145 -2
--59 -31 -82 -65 -88 -131 -7 -88 -80 -8 789 -864 158 -155 302 -291 320 -302
-39 -24 121 -28 156 -8 12 7 54 43 95 81 74 71 911 892 1423 1396 154 152 378
-373 498 491 121 118 225 226 233 241 35 67 9 162 -58 211 -37 27 -123 33 -163
-11z"/>
+                                -1607 l-300 -297 -460 454 c-296 293 -474 462 -500 474 -53 26 -91 25 -145 -2
+                                -59 -31 -82 -65 -88 -131 -7 -88 -80 -8 789 -864 158 -155 302 -291 320 -302
+                                39 -24 121 -28 156 -8 12 7 54 43 95 81 74 71 911 892 1423 1396 154 152 378
+                                373 498 491 121 118 225 226 233 241 35 67 9 162 -58 211 -37 27 -123 33 -163
+                                11z"/>
                             </g>
                         </svg>
                         <a href="/painel">
