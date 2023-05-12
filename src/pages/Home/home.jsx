@@ -26,45 +26,45 @@ function Home() {
 
     return (
         <main>
-            <section className="flex flex-col items-center ">
-                <img src={img} alt="" className=" " />
+            <section className="flex flex-col items-center">
+            <img src={img} alt="" className="lg:hidden"/>
 
 
 
-                <div className="w-auto m-auto h-[30vh]  bg-Dog bg-cover mx-2 my-4 rounded-[5px] lg:w-[1000px]" >
+                <div className="w-auto m-auto h-[30vh] bg-Dog bg-cover mx-2 my-4 rounded-[5px] lg:w-[60%]  " >
 
 
-                    <div className="absolute w-[90%] text-center  lg:w-[900px]">
+                    <div className="absolute w-[90%] text-center  lg:w-[60%]">
                         <h3 className="w-[90%] m-auto bg-secundaria rounded-[5px] mt-2">E se seu pet se perdesse oque voce faria?</h3>
                     </div>
-                    <div className="w-[60%] h-[30vh] bg-principal rounded-[5px] flex text-center justify-center">
+                    <div className="w-[60%] h-[30vh] bg-principal rounded-[5px] flex text-center justify-center  lg:w-[100%]">
                         <p className="w-[90%] h-auto m-auto text-white leading-[1.1]" >Sabemos que não é fácil e triste procurar pelo pet, colando cartazes de desaparecido, ligando para as pessoas, mas com qr pet. A possibilidade de achar seu pet de forma rápida é muito alta então não perca tempo e cadastre-se.</p>
                     </div>
                 </div>
 
-                <div className="flex flex-col w-full text-center items-center  text-principal text-[1.3em]">
-                    <div className="m-5 ">
+                <div className="flex flex-col w-full text-center items-center  text-principal text-[1.3em] lg:w-[55%] lg:flex-row lg:justify-center">
+                    <div className="m-5 lg:w-[24%]">
                         <Gratuito/>
 
                         <h3 >100% gratuito</h3>
 
                     </div>
-                    <div className="m-5">
+                    <div className="m-5 lg:w-[24%]">
                         <QrcodeIcon/>
 
-                        <h3>QR Code próprio do seu pet</h3>
+                        <h3>QRCode próprio </h3>
 
                     </div>
-                    <div className="m-5">
+                    <div className="m-5 lg:w-[24%]">
                         <IconeH/>
 
-                        <h3>Todas as informações do seu pet na sua mão!</h3>
+                        <h3>Informações do seu pet</h3>
 
                     </div>
-                    <div className="m-5">
+                    <div className="m-5 lg:w-[24%]">
                     <ContatoIcon/>
 
-                        <h3>Seu contato e contatos de emergência!</h3>
+                        <h3>Contatos</h3>
 
                     </div>
                 </div>
@@ -74,14 +74,16 @@ function Home() {
 
                 <h3 className="bg-secundaria px-5 py-2 text-principal m-5 rounded-[5px] text-[1.3em]">Exemplos</h3>
 
-                <div className="flex justify-center items-center text-center ">
-                <Exemplo className="flex justify-center items-center text-center "/>
+                <div className="flex  justify-center items-center text-center lg:justify-between ">
+                <Exemplo className=""/>
 
                 <Exemplo/>
                 </div>
-                <h3 className="text-principal text-[1.3em] m-5">Compartilhe em suas redes sociais.</h3>
-                <IconeH/>
-                <a className="btn-primary m-5 cursor-pointer" onclick={share()}>Comparthilhar</a>
+                
+                <h3 className="text-principal text-[1.3em] m-5 lg:hidden">Compartilhe em suas redes sociais.</h3>
+                <div className="lg:hidden"><IconeH  /></div>
+                <a className="btn-primary m-5 cursor-pointer lg:hidden" onclick={share()}>Comparthilhar</a>
+                
             </section>
         </main>
     )

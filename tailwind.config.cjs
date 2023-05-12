@@ -12,12 +12,14 @@ module.exports = {
       "terciaria": "#dc4759",
       "white": "#ffff",
       "black": "#000",
-      "red": "#F70021"
+      "red": "#F70021",
+      "secundarioLogin": "rgb(252, 208, 208, 0.6)"
     },
     backgroundImage: {
       "login": "url('./src/assets/images/gatoLogin.jpg')",
       "none": "url('')",
-      "Dog": "url('./src/assets/images/dogperdido.png')"
+      "Dog": "url('./src/assets/images/dogperdido.png')",
+      "login2": "url('./src/assets/images/gatinho.jpg')"
     }
   },
   plugins: [],

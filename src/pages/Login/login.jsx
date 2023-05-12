@@ -47,10 +47,12 @@ function Login() {
     }
 
     return(
-        <main className=" w-full min-h-[70vh] direction-col lg:bg-secundaria bg-login bg-no-repeat h-[60vh] bg-cover lg:bg-none lg:min-h-[90vh]">
+        <main className=" w-full min-h-[70vh] direction-col bg-login bg-no-repeat h-[60vh] bg-cover  lg:min-h-[90vh] lg:bg-login2">
             <section className="w-[90%] direction-col">
                 <div>
-                <div className={modal ? "block absolute top-[20vh] text-white p-3 rounded-lg bg-terciaria animate-bounce " : "hidden"}>*Senha ou email invalido</div>
+                   
+                <div className={modal ? "block absolute top-[20vh] text-white p-3 rounded-lg bg-terciaria animate-bounce lg:top-[30vh] lg:w-[300px] " : "hidden"}>*Senha ou email invalido</div>
+                <div className="lg:p-12 lg:pb-5  lg:rounded-lg lg:bg-secundarioLogin ">
                     <form action="">
                         <label htmlFor="">E-mail</label> 
                         <input id="email-address" required className="inp-primary" type="email" name="" placeholder="exemplo@qrpet.com" onChange={(e)=>setEmail(e.target.value)}/>
@@ -60,6 +62,7 @@ function Login() {
                         <button  onClick={onLogin} type="submit" className="btn-primary">Entrar</button>
                         </div>
                     </form>
+                    </div>
                 </div>
             </section>
         </main>
