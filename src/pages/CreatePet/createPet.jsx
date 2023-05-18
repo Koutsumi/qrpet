@@ -151,7 +151,7 @@ function CreatePet() {
                             </div>
                         </div>
 
-                        <label className="block mt-3" htmlFor="">Nome do pet</label>
+                        <label className="block mt-3" htmlFor="">* Nome do pet</label>
                         <input required onChange={event => setPetName(event.target.value)} value={petName || ''} className="inp-primary w-full" type="text" />
 
                         <label className="block" htmlFor="">Ano de nascimento</label>
@@ -159,7 +159,7 @@ function CreatePet() {
                         <input onChange={event => setPetBirth(event.target.value)} maxLength="4" value={petBirth || ''} className="inp-primary w-full mb-1" type="number" />
                         <span className="block mb-2 text-[0.8em]">Idade: <span className={age >= 0 && age <= 100 ? "text-black" : "text-white"}>{age} anos</span> </span>
 
-                        <label className="block" htmlFor="">Mãe/Pai do pet</label>
+                        <label className="block" htmlFor="">* Mãe/Pai do pet</label>
                         <input required onChange={event => setOwner_first(event.target.value)} value={owner_first || ''} className="inp-primary w-full" type="text" name="" id="" />
 
                         <label className="block" htmlFor="">Mãe/Pai do pet</label>
@@ -168,16 +168,21 @@ function CreatePet() {
                         <label className="block" htmlFor="">Endereço</label>
                         <input onChange={event => setOwner_address(event.target.value)} value={owner_address || ''} className="inp-primary w-full" type="text" />
 
-                        <label className="block" htmlFor="">Telefone para contato</label>
+                        <label className="block" htmlFor="">* Telefone</label>
                         <input required onChange={event => setOwner_phone(event.target.value)} value={owner_phone || ''} className="inp-primary w-full" type="text" name="" id="" />
 
-                        <label className="block" htmlFor="">Telefone para contato</label>
+                        <label className="block" htmlFor="">Telefone alternativo</label>
                         <input onChange={event => setOwner_phone_second(event.target.value)} value={owner_phone_second || ''} className="inp-primary w-full" type="text" name="" id="" />
 
                         <label className="block" htmlFor="">Observações</label>
-                        <textarea onChange={event => setDetails(event.target.value)} value={details || ''} className="inp-primary w-full" name="" id="" cols="30" rows="10"></textarea>
+                        <textarea onChange={event => setDetails(event.target.value)} value={details || ''} className="inp-primary w-full" name="" id="" cols="30" rows="10" placeholder=""></textarea>
 
-                        <div className="direction-col"><button className="btn-primary">Cadastrar</button></div>
+                        <div className="w-full direction-row">
+                        <a href="/painel">
+                            <div className="btn-primary bg-secundaria text-black"> « Voltar</div>
+                        </a>
+                            <button className="btn-primary">Salvar alterações</button>
+                        </div>
                     </form>
                 </div>
             </section>
