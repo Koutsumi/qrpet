@@ -16,6 +16,7 @@ module.exports = {
       "secundarioLogin": "rgb(252, 208, 208, 0.6)"
     },
     backgroundImage: {
+      "home": "url('./src/assets/images/bgincio.jpg')",
       "login": "url('./src/assets/images/gatoLogin.jpg')",
       "none": "url('')",
       "Dog": "url('./src/assets/images/dogperdido.png')",

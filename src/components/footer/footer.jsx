@@ -19,7 +19,7 @@ function Footer() {
                 
                     <h4 className="w-full m-2">Desenvolvido por</h4>
                     <div className="w-[900px] lg:flex flex-row">
-                    <div className="w-full m-2  "><h5 > Fernanda </h5>  <a href="https://www.linkedin.com/in/fernanda-matuda-baccarini-455b39171/" target="_blank">Linkedin </a>|<a href="https://github.com/Koutsumi" target="_blank"> Git Hub</a></div><div className="w-full m-2"><h5>Flavio</h5> <a href="https://www.linkedin.com/in/flavio-brancalhao-659574169/" target="_blank">Linkedin </a>|<a href="https://github.com/FlavioBrancalhao" target="_blank"> Git Hub</a></div>
+                    <div className="w-full m-2  "><h5 > Fernanda M Baccarini</h5>  <a href="https://www.linkedin.com/in/fernanda-matuda-baccarini-455b39171/" target="_blank">Linkedin </a>|<a href="https://github.com/Koutsumi" target="_blank"> Git Hub</a></div><div className="w-full m-2"><h5>Flavio Brancalhão</h5> <a href="https://www.linkedin.com/in/flavio-brancalhao-659574169/" target="_blank">Linkedin </a>|<a href="https://github.com/FlavioBrancalhao" target="_blank"> Git Hub</a></div>
                     </div>
                 
             </section>
