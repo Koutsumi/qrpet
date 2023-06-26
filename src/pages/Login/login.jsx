@@ -50,7 +50,7 @@ function Login() {
         <main className=" w-full min-h-[70vh] direction-col bg-login bg-no-repeat h-[60vh] bg-cover  lg:min-h-[90vh] lg:bg-login2">
             <section className="w-[90%] direction-col">
                 <div>
-                   
+                <h1 className='text-center my-4 uppercase text-terciaria font-bold tracking-[5px] text-[1.5em]'>Login</h1>
                 <div className={modal ? "block absolute top-[20vh] text-white p-3 rounded-lg bg-terciaria animate-bounce lg:top-[30vh] lg:w-[300px] " : "hidden"}>*Senha ou email invalido</div>
                 <div className="lg:p-12 lg:pb-5  lg:rounded-lg lg:bg-secundarioLogin ">
                     <form action="">
@@ -60,6 +60,9 @@ function Login() {
                         <input id="password" required className="inp-primary" type="password" name="" placeholder="Senha" onChange={(e)=>setPassword(e.target.value)}/>
                         <div className="w-full direction-col my-4">
                         <button  onClick={onLogin} type="submit" className="btn-primary">Entrar</button>
+                        <p><a href="/forgotpass" className='text-terciaria'>Esqueci minha senha</a></p>
+                        <p>Não tem uma conta? <a href="/register" className='text-terciaria'>Cadastre-se</a></p>
+
                         </div>
                     </form>
                     </div>

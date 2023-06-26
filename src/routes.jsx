@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/home'
 import Login from './pages/Login/login';
+import ForgotPass from './pages/ForgotPass/forgotPass';
 import MyPet from './pages/MyPet/myPet';
 import Painel from './pages/Painel/painel';
 import CreatePet from './pages/CreatePet/createPet';
@@ -16,6 +17,7 @@ function RoutesApp(){
 
             <Route path="/" element = {<Home/>}/>
             <Route path="/login" element = {<Login/>}/>
+            <Route path="/forgotpass" element = {<ForgotPass/>}/>
             <Route path="/mypet/:id" element = {<MyPet/>}/>
             <Route path="/painel" element = {<Painel/>}/>
             <Route path="/createpet" element = {<CreatePet/>}/>
