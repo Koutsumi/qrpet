@@ -174,10 +174,10 @@ function Painel(){
                     <button className='btn-primary w-[150px] p-5 mr-10' onClick={() => {setTmQrCode(true); getIdPet(pet)}}>QR code</button>
                       <div className={tmQrcode ? "shadow-md shadow-[black] w-[95%] h-[200px] rounded-lg bg-secundaria flex flex-row fixed text-principal top-8 left:calc(50% - 50px) items-center justify-around lg:w-[600px] " : "hidden invisible"}>
                      
-                      <a href={`https://chart.googleapis.com/chart?chs=78x78&cht=qr&chl=http://localhost:5173/mypet/${petId}`} className='btn-primary p-5 ' target='_blank'>2CM</a>
-                      <a href={`https://chart.googleapis.com/chart?chs=114x114&cht=qr&chl=http://localhost:5173/mypet/${petId}`} className='btn-primary p-5 ' target='_blank'>3CM</a>
-                      <a href={`https://chart.googleapis.com/chart?chs=152x152&cht=qr&chl=http://localhost:5173/mypet/${petId}`} className='btn-primary p-5 ' target='_blank'>4CM</a>
-                      <a href={`https://chart.googleapis.com/chart?chs=188x188&cht=qr&chl=http://localhost:5173/mypet/${petId}`} className='btn-primary p-5 ' target='_blank'>5CM</a>
+                      <a href={`https://chart.googleapis.com/chart?chs=78x78&cht=qr&chl=https://qrpet.vercel.app/myPet/${petId}`} className='btn-primary p-5 ' target='_blank'>2CM</a>
+                      <a href={`https://chart.googleapis.com/chart?chs=114x114&cht=qr&chl=https://qrpet.vercel.app/myPet/${petId}`} className='btn-primary p-5 ' target='_blank'>3CM</a>
+                      <a href={`https://chart.googleapis.com/chart?chs=152x152&cht=qr&chl=https://qrpet.vercel.app/myPet/${petId}`} className='btn-primary p-5 ' target='_blank'>4CM</a>
+                      <a href={`https://chart.googleapis.com/chart?chs=188x188&cht=qr&chl=https://qrpet.vercel.app/myPet/${petId}`} className='btn-primary p-5 ' target='_blank'>5CM</a>
                       <button className='absolute z-[99] text-6xl top-[-20px] right-[5px]'onClick={() => {setTmQrCode(false)}}>x</button>
                       </div>
                     <button onClick={() => setModal2(false)} className='btn-primary w-[150px] p-5 ' >Fechar</button>
