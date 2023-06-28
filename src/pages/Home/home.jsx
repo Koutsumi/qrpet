@@ -8,6 +8,7 @@ import QrcodeIcon from "../../components/svgs/qrcodeIcon"
 import IconeH from "../../components/svgs/iconeH"
 import ContatoIcon from "../../components/svgs/contatoIcon"
 import Exemplo from "../../components/svgs/exemplo"
+import Exemplos from "../../components/svgs/exemplos"
 
 function Home() {
 
@@ -69,20 +70,18 @@ function Home() {
                     </div>
                 </div>
                 <a className="btn-primary m-3 text-[1.3em]" href="/register">Cadastre-se</a>
-
+        <div className="flex text-center">
                 <h2 className=" text-[1.3em]">Como a pagina do meu pet vai aparecer?</h2>
-
+                </div>
                 <h3 className="bg-secundaria px-5 py-2 text-principal m-5 rounded-[5px] text-[1.3em]">Exemplos</h3>
 
                 <div className="flex  justify-center items-center text-center lg:justify-between ">
                 <Exemplo className=""/>
 
-                <Exemplo/>
+                <Exemplos />
                 </div>
                 
-                <h3 className="text-principal text-[1.3em] m-5 lg:hidden">Compartilhe em suas redes sociais.</h3>
-                <div className="lg:hidden"><IconeH  /></div>
-                <a className="btn-primary m-5 cursor-pointer lg:hidden" onclick={share()}>Comparthilhar</a>
+                
                 
             </section>
         </main>

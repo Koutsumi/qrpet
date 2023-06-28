@@ -50,8 +50,8 @@ function Header() {
                 <div className="w-[90%] direction-row ">
                     <a href="/"><Logo/></a>
 
-                    <div className={logado ? "hidden" : "block"}> <a className="text-white mr-3" href="/login" >Login</a> <a className="btn-primary" href="/register">Registrar</a></div>
-                    <div className={logado ? "block" : "hidden"}> <a className="text-white mr-3" href="/painel" >Meus pets</a><a className="btn-primary " onClick={handleLogout} href="/" >Sair</a></div>
+                    <div className={logado ? "hidden" : "block"}> <a className="notranslate text-white mr-3" href="/login" >Login</a> <a className="btn-primary" href="/register">Registrar</a></div>
+                    <div className={logado ? "block" : "hidden"}> <a className="notranslate text-white mr-3" href="/painel" >Meus pets</a><a className="btn-primary " onClick={handleLogout} href="/" >Sair</a></div>
                 </div>
             </section>
         </header>
