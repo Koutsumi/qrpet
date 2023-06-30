@@ -8,6 +8,7 @@ import QrcodeIcon from "../../components/svgs/qrcodeIcon"
 import IconeH from "../../components/svgs/iconeH"
 import ContatoIcon from "../../components/svgs/contatoIcon"
 import Exemplo from "../../components/svgs/exemplo"
+import Exemplos from "../../components/svgs/exemplos"
 
 function Home() {
 
@@ -77,7 +78,7 @@ function Home() {
                 <div className="flex  justify-center items-center text-center lg:justify-between ">
                 <Exemplo className=""/>
 
-                <Exemplo/>
+                <Exemplos />
                 </div>
                 
                 <h3 className="text-principal text-[1.3em] m-5 lg:hidden">Compartilhe em suas redes sociais.</h3>
