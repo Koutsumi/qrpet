@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {  signInWithEmailAndPassword, onAuthStateChanged   } from 'firebase/auth';
 import { auth } from '../../services/firebase';
 import { useNavigate } from 'react-router-dom'
@@ -8,20 +8,22 @@ function Login() {
 
     const[modal, setModal] = useState(false);
 
-    onAuthStateChanged(auth, (user) => {
-        if (user) {
-          // User is signed in, see docs for a list of available properties
-          // https://firebase.google.com/docs/reference/js/firebase.User
-          const uid = user.uid;
-          console.log(uid)
-          navigate("/painel")
-
-        
-          // ...
-        } else {
-          console.log('Não logado')
-        }
-      });
+    useEffect(() => {
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+              // User is signed in, see docs for a list of available properties
+              // https://firebase.google.com/docs/reference/js/firebase.User
+              const uid = user.uid;
+              console.log(uid)
+              navigate("/painel")
+    
+            
+              // ...
+            } else {
+              console.log('Não logado')
+            }
+          });
+    }, [])
 
     const navigate = useNavigate();
     const [email, setEmail] = useState('');

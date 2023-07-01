@@ -1,21 +1,16 @@
 import React from "react";
 
 import {
-  onSnapshot,
   collection,
   doc,
   deleteDoc,
-  serverTimestamp,
-  updateDoc,
-  QuerySnapshot,
-  addDoc,
   query,
   where,
   getDocs,
 } from "firebase/firestore";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import { createContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import db from "../../services/firebase";
 import { Link } from "react-router-dom";
 
@@ -44,17 +39,17 @@ function Painel() {
     await navigate("/createpet");
   }
 
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      // User is signed in, see docs for a list of available properties
-      // https://firebase.google.com/docs/reference/js/firebase.User
-      const uid = user.uid;
-      console.log(uid);
-      // ...
-    } else {
-      console.log("Não logado");
-    }
-  });
+  // onAuthStateChanged(auth, (user) => {
+  //   if (user) {
+  //     // User is signed in, see docs for a list of available properties
+  //     // https://firebase.google.com/docs/reference/js/firebase.User
+  //     const uid = user.uid;
+  //     console.log(uid);
+  //     // ...
+  //   } else {
+  //     console.log("Não logado");
+  //   }
+  // });
 
   async function buscarPets(id) {
     const petuser = query(ref_pets, where("userid", "==", `${id}`));
@@ -65,7 +60,6 @@ function Painel() {
       setQrpet(idpetmap);
     });
 
-    console.log(idpetmap.length);
     if (idpetmap.length > 0) {
       setQuantpet(true);
     } else if (idpetmap.length == 0) {
@@ -84,7 +78,7 @@ function Painel() {
       if (user) {
         // User is signed in, see docs for a list of available properties
         // https://firebase.google.com/docs/reference/js/firebase.User
-        console.log(user.uid);
+        //console.log(user.uid);
         setUid(user.uid);
 
         // ...
