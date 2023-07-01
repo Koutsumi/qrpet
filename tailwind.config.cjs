@@ -16,11 +16,11 @@ module.exports = {
       "secundarioLogin": "rgb(252, 208, 208, 0.6)"
     },
     backgroundImage: {
-      "login": "url('./src/assets/images/gatoLogin.jpg')",
+      "login": "url('/src/assets/images/gatoLogin.jpg')",
       "none": "url('')",
-      "Dog": "url('./src/assets/images/dogperdido.png')",
-      "login2": "url('./src/assets/images/gatinho.jpg')",
-      "home": "url('./src/assets/images/bgincio.jpg')"
+      "Dog": "url('/src/assets/images/dogperdido.png')",
+      "login2": "url('/src/assets/images/gatinho.jpg')",
+      "home": "url('/src/assets/images/bgincio.jpg')"
     }
   },
   plugins: [],
