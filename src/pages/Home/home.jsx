@@ -1,7 +1,3 @@
-import { useEffect, useState } from "react";
-import db from "../../services/firebase";
-import img from "../../assets/images/bgincio.jpg";
-import img2 from "../../assets/images/teste.png";
 import Gratuito from "../../components/svgs/gratuito";
 import QrcodeIcon from "../../components/svgs/qrcodeIcon";
 import IconeH from "../../components/svgs/iconeH";
@@ -125,9 +121,13 @@ function Home() {
           </h2>
 
           <div className="direction-col text-center lg:justify-between sm:direction-row sm:w-[350px]">
-            <Exemplo className="" />
+            <a href="http://qrpet.vercel.app/mypet/dPf8HiKh1qCsxeiITtK9">
+                <Exemplo className="" />
+            </a>
 
-            <Exemplos />
+            <a href="http://qrpet.vercel.app/mypet/QpVdUcJdh8iKkSa4qK67">
+                <Exemplos />
+            </a>
           </div>
 
           <p className="mt-8">
