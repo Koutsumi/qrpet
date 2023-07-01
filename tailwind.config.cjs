@@ -19,7 +19,8 @@ module.exports = {
       "login": "url('./src/assets/images/gatoLogin.jpg')",
       "none": "url('')",
       "Dog": "url('./src/assets/images/dogperdido.png')",
-      "login2": "url('./src/assets/images/gatinho.jpg')"
+      "login2": "url('./src/assets/images/gatinho.jpg')",
+      "home": "url('./src/assets/images/bgincio.jpg')"
     }
   },
   plugins: [],
