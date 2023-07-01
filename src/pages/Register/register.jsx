@@ -63,7 +63,7 @@ function Register() {
 
     return(
         <main className="w-full direction-col mt-3">
-            <img src={indianPig} alt="" className='lg:hidden'/>
+            <img src={indianPig} alt="" className='lg:hidden mt-[-3vh]'/>
             
             
             <section className="w-[90%] direction-col">
