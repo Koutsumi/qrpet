@@ -70,7 +70,7 @@ function Home() {
       </section>
 
       <section className="w-full direction-col">
-        <h2 className="mb-8 text-terciaria uppercase text-[1.4em] tracking-widest font-bold">
+        <h2 className="mb-8 text-terciaria uppercase text-[1.4em] text-center tracking-widest font-bold">
           Como a QrPet funciona
         </h2>
 
@@ -116,26 +116,29 @@ function Home() {
 
       <section className="w-full direction-col">
         <div className="w-[90%] max-w-[1080px] direction-col py-4">
-          <h2 className="mb-8 text-terciaria uppercase text-[1.4em] tracking-widest font-bold">
+          <h2 className="mb-8 text-terciaria uppercase text-[1.4em] text-center tracking-widest font-bold">
             Como ficará a página do seu pet!?
           </h2>
 
           <div className="direction-col text-center lg:justify-between sm:direction-row sm:w-[350px]">
-            <a href="http://qrpet.vercel.app/mypet/dPf8HiKh1qCsxeiITtK9">
+           
                 <Exemplo className="" />
-            </a>
+           
 
-            <a href="http://qrpet.vercel.app/mypet/QpVdUcJdh8iKkSa4qK67">
+            
                 <Exemplos />
-            </a>
+           
           </div>
 
-          <p className="mt-8">
+          <p className="mt-8  text-center">
             Acesse a página do{" "}
-            <a className="text-terciaria underline" href="">
-              Shake
+            <a className="text-terciaria underline" href="http://qrpet.vercel.app/mypet/QpVdUcJdh8iKkSa4qK67">
+            Bisteca 
             </a>
-            , o mascote QrPet!
+             <spam> e </spam> <a className="text-terciaria underline" href="http://qrpet.vercel.app/mypet/dPf8HiKh1qCsxeiITtK9">
+              Alfredo
+            </a >
+            , os mascotes QrPet!
           </p>
         </div>
       </section>

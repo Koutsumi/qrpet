@@ -195,28 +195,28 @@ function Painel() {
                     }
                   >
                     <a
-                      href={`https://chart.googleapis.com/chart?chs=78x78&cht=qr&chl=http://localhost:5173/mypet/${petId}`}
+                      href={`https://chart.googleapis.com/chart?chs=78x78&cht=qr&chl=https://qrpet.vercel.app/mypet/${petId}`}
                       className="btn-primary p-5 "
                       target="_blank"
                     >
                       2CM
                     </a>
                     <a
-                      href={`https://chart.googleapis.com/chart?chs=114x114&cht=qr&chl=http://localhost:5173/mypet/${petId}`}
+                      href={`https://chart.googleapis.com/chart?chs=114x114&cht=qr&chl=https://qrpet.vercel.app/mypet/${petId}`}
                       className="btn-primary p-5 "
                       target="_blank"
                     >
                       3CM
                     </a>
                     <a
-                      href={`https://chart.googleapis.com/chart?chs=152x152&cht=qr&chl=http://localhost:5173/mypet/${petId}`}
+                      href={`https://chart.googleapis.com/chart?chs=152x152&cht=qr&chl=https://qrpet.vercel.app/mypet/${petId}`}
                       className="btn-primary p-5 "
                       target="_blank"
                     >
                       4CM
                     </a>
                     <a
-                      href={`https://chart.googleapis.com/chart?chs=188x188&cht=qr&chl=http://localhost:5173/mypet/${petId}`}
+                      href={`https://chart.googleapis.com/chart?chs=188x188&cht=qr&chl=https://qrpet.vercel.app/mypet/${petId}`}
                       className="btn-primary p-5 "
                       target="_blank"
                     >
