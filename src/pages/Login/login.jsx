@@ -49,7 +49,7 @@ function Login() {
     }
 
     return(
-        <main className=" w-full min-h-[70vh] direction-col bg-login bg-no-repeat h-[60vh] bg-cover  lg:min-h-[90vh] lg:bg-login2">
+        <main className=" w-full min-h-[70vh] direction-col bg-no-repeat h-[60vh] bg-cover  lg:min-h-[90vh] lg:bg-login2">
             <section className="w-[90%] direction-col">
                 <div>
                 <h1 className='text-center my-4 uppercase text-terciaria font-bold tracking-[5px] text-[1.5em]'>Login</h1>
