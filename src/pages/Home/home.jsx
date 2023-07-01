@@ -1,93 +1,157 @@
-import { onSnapshot, collection, doc, deleteDoc, serverTimestamp, updateDoc, QuerySnapshot, addDoc } from "firebase/firestore"
-import { useEffect, useState } from "react"
-import db from '../../services/firebase'
-import img from '../../assets/images/bgincio.jpg'
-import img2 from '../../assets/images/teste.png'
-import Gratuito from "../../components/svgs/gratuito"
-import QrcodeIcon from "../../components/svgs/qrcodeIcon"
-import IconeH from "../../components/svgs/iconeH"
-import ContatoIcon from "../../components/svgs/contatoIcon"
-import Exemplo from "../../components/svgs/exemplo"
-import Exemplos from "../../components/svgs/exemplos"
+import { useEffect, useState } from "react";
+import db from "../../services/firebase";
+import img from "../../assets/images/bgincio.jpg";
+import img2 from "../../assets/images/teste.png";
+import Gratuito from "../../components/svgs/gratuito";
+import QrcodeIcon from "../../components/svgs/qrcodeIcon";
+import IconeH from "../../components/svgs/iconeH";
+import ContatoIcon from "../../components/svgs/contatoIcon";
+import Exemplo from "../../components/svgs/exemplo";
+import Exemplos from "../../components/svgs/exemplos";
 
 function Home() {
-
-
-    function share() {
-        if (navigator.share !== undefined) {
-            navigator.share({
-                title: 'QRPet',
-                text: 'site do qr per ',
-                url: 'https://www.google.com.br',
-            })
-                .then(() => console.log('Successful share'))
-                .catch((error) => console.log('Error sharing', error));
-        }
+  function share() {
+    if (navigator.share !== undefined) {
+      navigator
+        .share({
+          title: "QRPet",
+          text: "site do qr per ",
+          url: "https://www.google.com.br",
+        })
+        .then(() => console.log("Successful share"))
+        .catch((error) => console.log("Error sharing", error));
     }
+  }
 
-    return (
-        <main>
-            <section className="flex flex-col items-center">
-            <img src={img} alt="" className="lg:hidden"/>
+  return (
+    <main className="w-full direction-col">
+      <section className="hidden w-full md:direction-col bg-home bg-no-repeat bg-cover bg-center h-[80vh]">
+        <div className="w-[90%] max-w-[1080px] direction-row">
+          <div className="w-[55%]"></div>
+          <div className="w-[45%]">
+            <h1 className="text-[2em] text-center mb-8 tracking-widest">
+              Bem-vindo(a) ao QrPet!
+            </h1>
+            <p className="leading-10 text-justify text-[1.2em]">
+              No QrPet, estamos empenhados em reunir os animais perdidos com
+              seus donos amorosos. Com nossa tecnologia avançada e uma
+              comunidade solidária de amantes de animais, queremos garantir a
+              segurança e o bem-estar dos seus bichinhos de estimação.
+            </p>
+          </div>
+        </div>
+      </section>
 
+      <section className="md:hidden w-full direction-col bg-[#EFAEB4] bg-no-repeat bg-cover bg-center h-[80vh]">
+        <div className="w-[90%] max-w-[1080px] direction-col">
+          <div className="w-full">
+            <h1 className="text-[2em] text-center mb-8 tracking-widest">
+              Bem-vindo(a) ao QrPet!
+            </h1>
+            <p className="leading-10 text-justify text-[1.2em]">
+              No QrPet, estamos empenhados em reunir os animais perdidos com
+              seus donos amorosos. Com nossa tecnologia avançada e uma
+              comunidade solidária de amantes de animais, queremos garantir a
+              segurança e o bem-estar dos seus bichinhos de estimação.
+            </p>
+          </div>
+        </div>
+      </section>
 
+      <section className="w-full direction-col">
+        <div className="w-[90%] max-w-[1080px] direction-col py-4">
+          <p className="my-4">
+            <IconeH />
+          </p>
+          <p className="leading-7 text-center text-[1.2em] max-w-[475px] mb-4">
+            Nosso site é dedicado a ajudar os amantes de animais a manter seus
+            bichos de estimação seguros e protegidos. Com o objetivo de fornecer
+            uma solução eficaz para rastrear animais perdidos, oferecemos um
+            serviço de cadastro para pets, permitindo que você registre todas as
+            informações relevantes sobre o seu animalzinho.
+          </p>
+        </div>
+      </section>
 
-                <div className="w-auto m-auto h-[30vh] bg-Dog bg-cover mx-2 my-4 rounded-[5px] lg:w-[60%]  " >
+      <section className="w-full direction-col">
+        <h2 className="mb-8 text-terciaria uppercase text-[1.4em] tracking-widest font-bold">
+          Como a QrPet funciona
+        </h2>
 
+        <div className="w-[90%] max-w-[1080px] direction-col sm:direction-row bg-[#EEABB2] rounded-lg p-8">
+          <p className="my-4 w-[50%]">
+            <ContatoIcon />
+            <p className="text-center">Contato</p>
+          </p>
+          <p className="leading-7 text-justify text-[1.2em] w-[90%] sm:w-[50%] mb-4">
+            No QrPet, você pode cadastrar o seu animalzinho de forma rápida e
+            fácil. Basta criar um perfil exclusivo para o seu pet, inserindo
+            informações importantes como nome, foto, informações importantes e
+            seus próprios dados de contato.
+          </p>
+        </div>
 
-                    <div className="absolute w-[90%] text-center  lg:w-[60%]">
-                        <h3 className="w-[90%] m-auto bg-secundaria rounded-[5px] mt-2">E se seu pet se perdesse oque voce faria?</h3>
-                    </div>
-                    <div className="w-[60%] h-[30vh] bg-principal rounded-[5px] flex text-center justify-center  lg:w-[100%]">
-                        <p className="w-[90%] h-auto m-auto text-white leading-[1.1]" >Sabemos que não é fácil e triste procurar pelo pet, colando cartazes de desaparecido, ligando para as pessoas, mas com qr pet. A possibilidade de achar seu pet de forma rápida é muito alta então não perca tempo e cadastre-se.</p>
-                    </div>
-                </div>
+        <div className="w-[90%] max-w-[1080px] flex flex-col-reverse items-center justify-center sm:direction-row  rounded-lg p-8">
+          
+          <p className="leading-7 text-justify text-[1.2em] w-[90%] sm:w-[50%] mb-4">
+            Uma das principais funcionalidades do QrPet é a geração de um QR
+            Code personalizado contendo todas as informações relevantes sobre o
+            seu animal de estimação. Esse QR Code pode ser impresso e colocado
+            na coleira do seu pet.
+          </p>
 
-                <div className="flex flex-col w-full text-center items-center  text-principal text-[1.3em] lg:w-[55%] lg:flex-row lg:justify-center">
-                    <div className="m-5 lg:w-[24%]">
-                        <Gratuito/>
+          <p className="my-4 w-[50%]">
+            <QrcodeIcon />
+            <p className="text-center">QrCode</p>
+          </p>
+        </div>
 
-                        <h3 >100% gratuito</h3>
+        <div className="w-[90%] max-w-[1080px] direction-col sm:direction-row bg-[#EEABB2] rounded-lg p-8 mb-8">
+          <p className="my-4 w-[50%]">
+            <Gratuito />
+            <p className="text-center">100% Gratuito</p>
+          </p>
+          <p className="leading-7 text-justify text-[1.2em] w-[90%] sm:w-[50%] mb-4">
+            Desfrute de um serviço de rastreamento de animais de estimação
+            totalmente gratuito.
+          </p>
+        </div>
+      </section>
 
-                    </div>
-                    <div className="m-5 lg:w-[24%]">
-                        <QrcodeIcon/>
+      <section className="w-full direction-col">
+        <div className="w-[90%] max-w-[1080px] direction-col py-4">
+          <h2 className="mb-8 text-terciaria uppercase text-[1.4em] tracking-widest font-bold">
+            Como ficará a página do seu pet!?
+          </h2>
 
-                        <h3>QRCode próprio </h3>
+          <div className="direction-col text-center lg:justify-between sm:direction-row sm:w-[350px]">
+            <Exemplo className="" />
 
-                    </div>
-                    <div className="m-5 lg:w-[24%]">
-                        <IconeH/>
+            <Exemplos />
+          </div>
 
-                        <h3>Informações do seu pet</h3>
+          <p className="mt-8">
+            Acesse a página do{" "}
+            <a className="text-terciaria underline" href="">
+              Shake
+            </a>
+            , o mascote QrPet!
+          </p>
+        </div>
+      </section>
 
-                    </div>
-                    <div className="m-5 lg:w-[24%]">
-                    <ContatoIcon/>
-
-                        <h3>Contatos</h3>
-
-                    </div>
-                </div>
-                <a className="btn-primary m-3 text-[1.3em]" href="/register">Cadastre-se</a>
-
-                <h2 className=" text-[1.3em]">Como a pagina do meu pet vai aparecer?</h2>
-
-                <h3 className="bg-secundaria px-5 py-2 text-principal m-5 rounded-[5px] text-[1.3em]">Exemplos</h3>
-
-                <div className="flex  justify-center items-center text-center lg:justify-between ">
-                <Exemplo className=""/>
-
-                <Exemplos />
-                </div>
-                
-                <h3 className="text-principal text-[1.3em] m-5 lg:hidden">Compartilhe em suas redes sociais.</h3>
-                <div className="lg:hidden"><IconeH  /></div>
-                <a className="btn-primary m-5 cursor-pointer lg:hidden" onclick={share()}>Comparthilhar</a>
-                
-            </section>
-        </main>
-    )
+      <section className="w-full direction-col">
+        <div className="w-[90%] max-w-[1080px] direction-col py-4">
+          <p className="leading-7 text-center text-[1.2em] max-w-[475px] mb-4">
+            Não deixe a chance de proporcionar mais proteção ao seu animal de
+            estimação. Cadastre-se no QrPet hoje mesmo e tenha a tranquilidade
+            de saber que, em caso de emergência, o seu pet estará sempre apenas
+            a um QR Code de distância.
+          </p>
+        </div>
+      </section>
+    </main>
+  );
 }
 
-export default Home
+export default Home;
