@@ -76,8 +76,8 @@ function Register() {
                         <label htmlFor="">Email</label>
                         <input className="inp-primary"type="email" value={email} name="email" id="email" placeholder='exemplo@qrpet.com' onChange={(e)=>{setEmail(e.target.value), disaledButton()}}/>
 
-                        <label htmlFor="">Nome completo</label>
-                        <input className="inp-primary"type="text" value={name} name="name" id="name" placeholder='Qr Pet' onChange={(e)=>{setName(e.target.value), disaledButton()}}/>
+                        {/* <label htmlFor="">Nome completo</label>
+                        <input className="inp-primary"type="text" value={name} name="name" id="name" placeholder='Qr Pet' onChange={(e)=>{setName(e.target.value), disaledButton()}}/> */}
 
                         <label htmlFor="">Senha</label>
                         <input className="inp-primary" type="password" value={password} name="password" id="password" placeholder='Digite sua senha' onChange={async (e)=>{setPass(e.target.value)}}/>
