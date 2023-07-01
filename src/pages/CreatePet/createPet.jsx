@@ -189,7 +189,7 @@ function CreatePet() {
 
             <section className={isExpanded === true ? "w-full direction-col my-10 fixed top-[10rem]" : "hidden"}>
                 <div className="w-[80%] bg-secundaria rounded shadow-2xl py-4">
-                    <div className="w-full direction-col">
+                    <div className="w-full direction-col px-4">
                         <h1 className="text-center my-4 uppercase text-terciaria font-bold tracking-[5px] text-[1.1em]">Pet cadastrado com sucesso!</h1>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                             width="75.000000pt" height="75.000000pt" viewBox="0 0 512.000000 512.000000"

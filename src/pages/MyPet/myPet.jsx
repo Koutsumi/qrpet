@@ -102,7 +102,7 @@ function MyPet() {
         <main>
     
                     <section className='w-full flex flex-col items-center justify-center text-lg'>
-                    <img src={petImage} alt="" className='w-[150px] m-auto mt-3 h-[150px] bg-contain shadow-lg rounded-lg border-4 border-principal '/>
+                    <img src={petImage} alt="" className='w-[150px] m-auto mt-3 bg-contain shadow-lg rounded-lg border-4 border-principal '/>
                            <div className="bg-principal flex flex-col w-[90%] mt-4 m-auto rounded-md items-center justify-center text-center text-white p-3">
                                 <h1 className='font-bold text-3x1'>{petName}</h1>
                                 <h1 className='font-bold text-3x1'>{years} Anos</h1>
@@ -123,7 +123,7 @@ function MyPet() {
                             <div className="w-[80%] flex flex-col justify-center mt-4 ">
                             <div className="flex mb-2 items-center gap-2 text-[1.1em]"><Icone/><h1 className='text-principal'>Contato:</h1></div>
                                 <h1 className='ml-10'>Principal: {ownerPhone}</h1>
-                                <h1 className='ml-10 mb-4 '>Emergenta: {ownerPhoneSecond}</h1>
+                                <h1 className='ml-10 mb-4 '>Alternativo: {ownerPhoneSecond}</h1>
                                     <hr className='border-b-2 border-principal' />  
                             </div>
                             <div className="w-[80%] flex flex-col justify-center mt-4 ">
