@@ -189,28 +189,28 @@ function Painel() {
                     }
                   >
                     <a
-                      href={`https://chart.googleapis.com/chart?chs=78x78&cht=qr&chl=https://qrpet.vercel.app/mypet/${petId}`}
+                      href={`https://api.qrserver.com/v1/create-qr-code/?data=https://qrpet.vercel.app/mypet/${petId}&size=78x78`}
                       className="btn-primary p-5 "
                       target="_blank"
                     >
                       2CM
                     </a>
                     <a
-                      href={`https://chart.googleapis.com/chart?chs=114x114&cht=qr&chl=https://qrpet.vercel.app/mypet/${petId}`}
+                      href={`https://api.qrserver.com/v1/create-qr-code/?data=https://qrpet.vercel.app/mypet/${petId}&size=114x114`}
                       className="btn-primary p-5 "
                       target="_blank"
                     >
                       3CM
                     </a>
                     <a
-                      href={`https://chart.googleapis.com/chart?chs=152x152&cht=qr&chl=https://qrpet.vercel.app/mypet/${petId}`}
+                      href={`https://api.qrserver.com/v1/create-qr-code/?data=https://qrpet.vercel.app/mypet/${petId}&size=152x152`}
                       className="btn-primary p-5 "
                       target="_blank"
                     >
                       4CM
                     </a>
                     <a
-                      href={`https://chart.googleapis.com/chart?chs=188x188&cht=qr&chl=https://qrpet.vercel.app/mypet/${petId}`}
+                      href={`https://api.qrserver.com/v1/create-qr-code/?data=https://qrpet.vercel.app/mypet/${petId}&size=188x188`}
                       className="btn-primary p-5 "
                       target="_blank"
                     >
